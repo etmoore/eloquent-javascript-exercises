@@ -1,7 +1,9 @@
-var arrays = [[1,2,3], [4,5], [6]];
+var arrays = [[1, 2, 3], [4, 5], [6]];
 
-flatArray = (arrays.reduce(function(flat, current) {
-  return flat.concat(current);
-}, []));
+flatArray = arrays.reduce(function(prev, current){
+	return prev.concat(current);
+});
 
-console.log(flatArray);
+console.log(flattenedArray);
+
+// → [1, 2, 3, 4, 5, 6]
